@@ -10,7 +10,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-  activity = discord.Game(name="Sucking your Mom ;)", type=3)
+  activity = discord.Game(name="with your Mom ;)", type=3)
   await client.change_presence(status=discord.Status.online, activity=activity)
   print("Ready")
 
@@ -21,6 +21,12 @@ async def on_message(message):
 
   if message.content.startswith('Hello'):
     await message.channel.send('your are not loved.')
+  
+  if message.content.startswith('hello'):
+    await message.channel.send('your are not loved.')
+
+  if message.content.startswith('thank you'):
+    await message.channel.send('Welcome. BTW Your are adopted.')
 
 
 keep_alive()
