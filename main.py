@@ -9,9 +9,9 @@ from discord.utils import get
 
 client = discord.Client()
 
-ella_words = ["joke", "joking", "jk", "fat second", "let us in the penthouse", "stfu", "quirky", ]
+conecock_words = ["joke", "joking", "jk", "fat second", "let us in the penthouse", "stfu", "quirky", ]
 
-ella_responses = [
+conecock_responses = [
   "Kys",
   "no"
 ]
@@ -36,6 +36,9 @@ async def on_message(message):
 
   if message.content.startswith('thank you'):
     await message.channel.send('Welcome. BTW your are adopted.')
+    
+  if message.content.startswuth('get on'):
+    await message.channel.send('no you')
 
   if message.content.startswith('github-repo'):
     await message.channel.send('My repo is https://github.com/Charmander1011/ConeCock-Bot now go kys.')
