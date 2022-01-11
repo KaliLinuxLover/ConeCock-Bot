@@ -9,7 +9,7 @@ from discord.utils import get
 
 client = discord.Client()
 
-ella_words = ["joke", "joking", "jk", "fat second", "let us in the penthouse", "stfu", "quirky", ]
+ella_words = ["joke", "joking", "jk", "fat second", "let us in the penthouse", "stfu", "quirky", "Jk", "Joke", "Joking", "Fat second", "Let us in the penthouse", "Stfu", "STFU", "Quirky",]
 
 ella_responses = [
   "Kys",
@@ -45,6 +45,12 @@ async def on_message(message):
   
   if message.content.startswith('kys'):
     await message.channel.send('no you')
+
+  if message.content.startswith('no you'):
+    await message.channel.send('uno reverse')
+
+  if message.content.startswith('no u'):
+    await message.channel.send('uno reverse')
 
 
 keep_alive()
