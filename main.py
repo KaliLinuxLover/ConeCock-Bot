@@ -52,6 +52,9 @@ async def on_message(message):
   if message.content.startswith('no u'):
     await message.channel.send('uno reverse')
 
+  if message.content.startswith('~av'):
+    await message.channel.send(os.getenv('av_shutoff'))
+
 
 keep_alive()
 client.run(os.getenv('TOKEN'))
