@@ -19,7 +19,7 @@ ella_responses = [
 
 @client.event
 async def on_ready():
-  activity = discord.Game(name="with your Mom ;)", type=3)
+  activity = discord.Game(name="with Ella's feelings.", type=3)
   await client.change_presence(status=discord.Status.online, activity=activity)
   print("Ready")
 
@@ -54,6 +54,14 @@ async def on_message(message):
 
   if message.content.startswith('~av'):
     await message.channel.send(os.getenv('av_shutoff'))
+
+  if message.content.startswith('!slapabitch'):
+    chnl = client.get_channel(959617199012741192)
+    #num = 4
+    for counter in range(1,6):
+      await chnl.send(f'Hey Ella, sorry but not sorry! <@695703603746177084>')
+      #int(num)
+      #num -= 1
 
 
 keep_alive()
